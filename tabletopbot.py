@@ -1,7 +1,6 @@
 import discord
 from random import randint
-#placeholder token. Don't even bother.
-TOKEN = "NDYxOTM1MDQyMDg4Nzk2MTkw.DhalBA.3MMqTSKhF7hWwlKJMbSjDV7BMOY"
+TOKEN = "PLACEHOLDER"
 client = discord.Client()
 
 @client.event
@@ -28,11 +27,6 @@ async def on_message(message):
                 strFinal += str(tupAddends[i]) + " "
         strFinal += "= {}"
         await client.send_message(message.channel, strFinal.format(rollSum))
-
-    if message.content.startswith('!hello'):
-        msg = 'Hello {0.author.mention}'.format(message)
-        await client.send_message(message.channel, msg)
-
 
 @client.event
 async def on_ready():
