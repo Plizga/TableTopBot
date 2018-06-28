@@ -1,5 +1,6 @@
 import discord
 from random import randint
+#placeholder token. Don't even bother.
 TOKEN = "NDYxOTM1MDQyMDg4Nzk2MTkw.DhalBA.3MMqTSKhF7hWwlKJMbSjDV7BMOY"
 client = discord.Client()
 
