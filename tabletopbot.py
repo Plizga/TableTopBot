@@ -5,10 +5,14 @@ client = discord.Client()
 
 @client.event
 async def on_message(message):
-    """ Prevent bot from replying to itself """
+    """
+    handles events involving messages.
+    :param message: message submitted by user.
+    """
+    #Prevent bot from replying to itself
     if message.author == client.user:
         return
-    """handles all !roll parameters"""
+    #handles all !roll parameters
     if message.content.startswith('!roll'):
         strRoll = message.content.strip("!roll ")
         amount, die = strRoll.split("d", 1)
@@ -30,7 +34,9 @@ async def on_message(message):
 
 @client.event
 async def on_ready():
-    """prints bot information to console"""
+    """
+    prints bot information to the console.
+    """
     print('Logged in as')
     print(client.user.name)
     print(client.user.id)
