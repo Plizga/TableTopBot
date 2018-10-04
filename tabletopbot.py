@@ -1,6 +1,6 @@
 import discord
 from random import randint
-TOKEN = "PLACEHOLDER"
+TOKEN = "NDYxOTM1MDQyMDg4Nzk2MTkw.DpcG3w.HkJm4DC7TWaZhaOcRBltC2lbsLc"
 client = discord.Client()
 
 @client.event
